@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Counter</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .counter-container {
+        display: inline-block;
+        padding: 20px;
+        border: 2px solid #333;
+        border-radius: 10px;
+        background-color: #f0f0f0;
+      }
+
+      .counter-display {
+        font-size: 2em;
+        margin: 20px 0;
+        padding: 10px;
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        color: black;
+      }
+
+      button {
+        font-size: 1.2em;
+        padding: 10px 20px;
+        margin: 5px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .increment {
+        background-color: #4caf50;
+        color: white;
+      }
+
+      .decrement {
+        background-color: #f44336;
+        color: white;
+      }
+
+      .reset {
+        background-color: #555;
+        color: white;
+      }
+
+      button:hover {
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="counter-container">
+      <h1>Interactive Counter</h1>
+
+      <div class="counter-display" id="counter">0</div>
+
+      <button class="increment" id="incrementBtn">+</button>
+      <button class="decrement" id="decrementBtn">-</button>
+      <button class="reset" id="resetBtn">Reset</button>
+
+      <p>Use ⬆️ / ⬇️ arrow keys</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
