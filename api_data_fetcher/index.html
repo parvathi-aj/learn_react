@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Data Fetcher</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .container {
+        background-color: #f5f5f5;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 10px 5px;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+      button:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+      }
+      .loading {
+        color: #666;
+        font-style: italic;
+      }
+      .error {
+        color: #f44336;
+        background-color: #ffebee;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 10px 0;
+      }
+      .post {
+        background-color: white;
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border-left: 4px solid #4caf50;
+      }
+      .post-title {
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 5px;
+      }
+      .post-body {
+        color: #666;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>API Data Fetcher</h1>
+      <p>Click the button to fetch posts from the API:</p>
+
+      <button id="fetchBtn">Fetch Posts</button>
+      <button id="clearBtn">Clear Posts</button>
+
+      <div id="status"></div>
+      <div id="posts"></div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
